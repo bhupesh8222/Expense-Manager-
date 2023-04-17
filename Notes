@@ -1,0 +1,14 @@
+- Styled Components 
+    > They encapsulate CSS down to the component level and allow you to use JavaScript to define reusable styles.
+    > Using styled-components, you can maintain the component-driven architecture that React already reinforces
+    > It's also very powerful because it makes it easier to work with props and state.
+
+const Button = styled.button`
+  padding: 0.8rem 1.6rem;
+  background-color: ${(props) => (props.primary ? "purple" : "white")};
+  border: 1px solid #00000;
+  color: ${(props) => (props.primary ? "white" : "purple")};
+`;
+
+    > With styled components, you don't need to manually pass the props to the CSS. It is automatically available,    
+    > No class name bugs: styled-components generates unique class names for your styles. You never have to worry about duplication, overlap or misspellings.
